@@ -1,0 +1,120 @@
+$container-width: 450px;
+$container-bg-color: rgba(255, 255, 255, 0.15);
+$container-border-color: rgba(255, 255, 255, 0.2);
+$container-padding: 40px;
+$container-border-radius: 10px;
+$font-color: #fff;
+$input-height: 50px;
+$input-border-radius: 40px;
+$input-padding: 20px 25px;
+$icon-font-size: 20px;
+$recall-forget-font-size: 14.5px;
+$signup-link-font-size: 15px;
+$button-bg-color: #fff;
+$button-box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+$button-font-size: 16px;
+$button-font-weight: 600;
+$button-height: 50px;
+
+.container {
+  width: $container-width;
+  background-color: $container-bg-color;
+  backdrop-filter: blur(10px);
+  border: 2px solid $container-border-color;
+  padding: $container-padding;
+  border-radius: $container-border-radius;
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    color: $font-color;
+  }
+
+  .input-field {
+    position: relative;
+    width: 100%;
+    height: $input-height;
+    margin: 50px auto;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      outline: none;
+      border: 2px solid $container-border-color;
+      border-radius: $input-border-radius;
+      font-size: 16px;
+      color: $font-color;
+      padding: $input-padding;
+
+      &::placeholder {
+        color: $font-color;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      font-size: $icon-font-size;
+      color: $font-color;
+    }
+  }
+
+  .recall-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: $recall-forget-font-size;
+    margin: -15px 0 15px;
+
+    label {
+      color: $font-color;
+    }
+
+    input {
+      margin-right: 5px;
+    }
+
+    a {
+      color: $font-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    height: $button-height;
+    background-color: $button-bg-color;
+    border: none;
+    outline: none;
+    border-radius: $input-border-radius;
+    box-shadow: $button-box-shadow;
+    cursor: pointer;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    text-shadow: none;
+  }
+
+  .signup-link {
+    font-size: $signup-link-font-size;
+    text-align: center;
+    margin: 20px 0 10px;
+
+    p {
+      color: $font-color;
+
+      a {
+        color: $font-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

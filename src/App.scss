@@ -1,0 +1,29 @@
+$global-margin: 0;
+$global-padding: 0;
+$global-font-family: Helvetica;
+$global-text-shadow: #000 1px 1px;
+$app-display: flex;
+$app-justify-content: center;
+$app-align-items: center;
+$app-min-height: 100vh;
+$app-bg-image: url(assets/bg.webp);
+$app-bg-size: cover;
+$app-bg-position: center;
+
+* {
+  margin: $global-margin;
+  padding: $global-padding;
+  font-family: $global-font-family;
+  box-sizing: border-box;
+  text-shadow: $global-text-shadow;
+}
+
+.App {
+  display: $app-display;
+  justify-content: $app-justify-content;
+  align-items: $app-align-items;
+  min-height: $app-min-height;
+  background-image: $app-bg-image;
+  background-size: $app-bg-size;
+  background-position: $app-bg-position
+}
